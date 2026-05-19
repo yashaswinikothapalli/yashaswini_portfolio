@@ -1,191 +1,650 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Yashaswini Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
 <body>
+    <div class="cursor-glow"></div>
+<div class="noise"></div>
+<div class="spotlight"></div>
+
+<div class="particles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
 <div class="bg"></div>
 
 <!-- NAVBAR -->
 <header class="navbar">
-    <h2 class="logo">PORTFOLIO: Yashaswini Kothapalli</h2>
 
-    <nav>
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Educ.</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#contact" class="nav-link">Contact</a>
+    <!-- LOGO -->
+    <div class="nav-logo-wrap">
+
+        <div class="logo-dot"></div>
+
+        <h2 class="logo">
+            Yashaswini
+            <span>Portfolio</span>
+        </h2>
+
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav-menu">
+
+        <a href="#home" class="nav-link">
+            <span>Home</span>
+        </a>
+
+        <a href="#about" class="nav-link">
+            <span>About</span>
+        </a>
+
+        <a href="#projects" class="nav-link">
+            <span>Projects</span>
+        </a>
+
+        <a href="#education" class="nav-link">
+            <span>Education</span>
+        </a>
+
+        <a href="#skills" class="nav-link">
+            <span>Skills</span>
+        </a>
+
+        <a href="#contact" class="nav-link">
+            <span>Contact</span>
+        </a>
+
     </nav>
-</header>
 
+    <!-- RIGHT BUTTON -->
+    <a href="#contact" class="nav-connect">
+        Let's Connect✨📩
+    </a>
+
+</header>
 <!-- HERO -->
 <section class="hero reveal" id="home">
 
+    <!-- FLOATING EFFECTS -->
+    <div class="hero-orb orb-one"></div>
+    <div class="hero-orb orb-two"></div>
+    <div class="hero-grid"></div>
+
+    <!-- LEFT -->
     <div class="hero-left">
-        <h1>Hello, I'm Yashaswini </h1>
+
+        <div class="hero-badge">
+            ⚡ Building Modern Web Application
+        </div>
+
+        <h1 class="hero-title">
+            Hello, I'm
+            <span>Yashaswini</span>
+        </h1>
 
         <p class="role">
             <span id="typing"></span>
         </p>
 
         <p class="desc">
-            I design and build modern web applications that are scalable, efficient, and user-focused. 
-            My goal is to create solutions that are not just functional, but impactful and visually engaging.
+            I create premium full-stack web experiences with modern UI,
+            scalable backend systems, immersive animations, and impactful
+            user-focused products that feel futuristic and unforgettable.
         </p>
 
-        <div class="btns">
-            <a href="#about" class="btn">About Me</a>
+        <!-- STATS -->
+         <div class="hero-stats">
 
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#education" class="btn">Education</a>
-            <a href="#skills" class="btn">Skills</a>
-            <a href="#contact" class="btn">Contact</a>
-        </div>
+    <!-- <div class="stat-box">
+        <h3>Creative</h3>
+        <p>Modern UI Experiences</p>
+    </div> -->
+
+    <div class="stat-box">
+        <h3>Python</h3>
+        <p>Full Stack Developer</p>
     </div>
 
-    <div class="hero-right">
-        <div class="image-wrapper">
-            <img src="Profile_image.png" class="profile">
+    <div class="stat-box">
+        <h3>Mindset</h3>
+        <p>Building Impressive Interfaces</p>
+    </div>
+
+</div>
+
+        <!-- BUTTONS -->
+        <div class="btns">
+
+            <a href="#projects" class="btn hero-btn">
+                Explore My Projects ✨
+            </a>
+
+            <a href="#contact" class="btn secondary-btn">
+                Let's Build Something 🚀💫
+            </a>
+
         </div>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+
+        <div class="image-wrapper">
+
+            <!-- ROTATING RINGS -->
+            <div class="ring ring1"></div>
+            <div class="ring ring2"></div>
+
+            <!-- FLOATING TECH -->
+            <div class="floating-tech tech1">Python</div>
+            <div class="floating-tech tech2">Django</div>
+            <div class="floating-tech tech3">React</div>
+            <div class="floating-tech tech4">FastAPI</div>
+
+            <!-- IMAGE -->
+            <img src="{% static 'images/Profile_image.png' %}" class="profile">
+
+        </div>
+
     </div>
 
 </section>
 
 <!-- ABOUT -->
+<!-- ABOUT -->
 <section class="about reveal" id="about">
-    <h2>About Me 👩‍💻✨</h2>
 
-    <!-- <p class="about-desc">
-        I’m Yashaswini Kothapalli, a passionate Full Stack Developer who enjoys turning ideas into real-world applications. 
-        I specialize in Django and modern frontend technologies. I also explore Machine Learning to solve real-world problems.
-    </p> --><p class="about-desc">
-I’m Yashaswini Kothapalli, a Full Stack Developer specializing in Django and modern web technologies. 
-I build scalable backend systems, efficient APIs, and clean, user-focused interfaces with React. 
-Focused on clean code and real-world problem solving, I aim to deliver impactful, production-ready solutions.
-</p>
+    <div class="about-bg-orb orb1"></div>
+    <div class="about-bg-orb orb2"></div>
+
+    <div class="section-tag">INTRODUCTION</div>
+
+    <h2 class="section-title">
+        About Me 👩‍💻✨
+    </h2>
+
+    <p class="about-desc">
+        I’m Yashaswini Kothapalli, a Full Stack Developer specializing in Django and modern web technologies.
+        I build scalable backend systems, efficient APIs, and clean, user-focused interfaces with React.
+        Focused on clean code and real-world problem solving, I aim to deliver impactful, production-ready solutions.
+    </p>
 
     <div class="about-cards">
-        <div class="about-box"><h3>🎯 Goal:</h3><p>To build efficient, scalable systems for real-world impact.
-</p></div>
-        <div class="about-box"><h3>💡 Interests:</h3><p>Turning ideas into impactful products using code.</p></div>
-        <div class="about-box"><h3>⚡ Strengths:</h3><p>Problem solving & clean full-stack development.</p></div>
-    </div>
-</section>
 
+       <div class="about-box">
+    <div class="about-icon">🎯</div>
+
+    <h3>Goal :</h3>
+
+    <p>
+        My goal is to build innovative digital experiences that combine
+        performance, creativity, and real-world impact — transforming ideas
+        into scalable products people genuinely enjoy using.
+    </p>
+</div>
+
+       <div class="about-box">
+    <div class="about-icon">💡</div>
+
+    <h3>Interests :</h3>
+
+    <p>
+        I’m passionate about modern web technologies, futuristic UI design,
+        intelligent systems, and creating immersive applications that feel
+        visually stunning, smooth, and meaningful.
+    </p>
+</div>
+
+       <div class="about-box">
+    <div class="about-icon">⚡</div>
+
+    <h3>Strengths :</h3>
+
+    <p>
+        Strong problem-solving, fast adaptability, clean full-stack development,
+        and the ability to turn complex ideas into polished, user-focused
+        solutions with attention to both logic and design.
+    </p>
+</div>
+
+</section>
 <!-- PROJECTS -->
 <section class="projects reveal" id="projects">
+
     <h2>My Projects 💼</h2>
 
     <div class="grid">
+
+        <!-- PROJECT 1 -->
         <div class="card">
-            <h3>🌦️Weather Prediction System</h3>
-            <p>Machine learning model predicting weather using real datasets with improved accuracy.</p>
-            <div class="tech-stack"><span>Python</span><span>Pandas</span><span>ML</span>    <span>Model Training</span>
-</div>
+            <div class="project-glow"></div>
+            <h3>🌦️ Weather Prediction System</h3>
+
+            <p>
+                Machine learning model predicting weather using
+                real datasets with improved accuracy.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>ML</span>
+                <span>Model Training</span>
+            </div>
         </div>
 
+        <!-- PROJECT 2 -->
         <div class="card">
+            <div class="project-glow"></div>
             <h3>💡 Smart Street Light</h3>
-            <p>IoT automation system controlling lights using sensors to save energy.</p>
-            <div class="tech-stack"><span>IoT</span><span>Arduino</span><span>Automation</span><span>Sensors</span></div>
+
+            <p>
+                IoT automation system controlling lights
+                using sensors to save energy.
+            </p>
+
+            <div class="tech-stack">
+                <span>IoT</span>
+                <span>Arduino</span>
+                <span>Automation</span>
+                <span>Sensors</span>
+            </div>
         </div>
 
+        <!-- PROJECT 3 -->
         <div class="card">
+            <div class="project-glow"></div>
             <h3>🍔 Tasty Delight</h3>
-            <p>Modern React food ordering app with responsive UI and cart system.</p>
-            <div class="tech-stack">    <span>HTML</span>    <span>CSS</span>    <span>Javascript</span>
 
+            <p>
+                Modern React food ordering app with
+                responsive UI and cart system.
+            </p>
 
-<span>React</span><span>Responsive UI Design</span></div>
+            <div class="tech-stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Responsive UI</span>
+            </div>
         </div>
 
+        <!-- PROJECT 4 -->
         <div class="card">
+            <div class="project-glow"></div>
             <h3>📊 TasteTrack</h3>
-            <p>Django-based app with authentication and backend logic.</p>
-            <div class="tech-stack"><span>Python</span><span>Django</span><span>HTML</span><span>CSS</span></div>
-        </div>
-    </div>
-</section>
 
+            <p>
+                Django-based application with authentication
+                and backend management system.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Django</span>
+                <span>HTML</span>
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="card">
+            <div class="project-glow"></div>
+            <h3>📝 Task Manager</h3>
+
+            <p>
+                Task management web app for organizing
+                tasks and tracking productivity efficiently.
+            </p>
+
+            <div class="tech-stack">
+                <span>Python</span>
+                <span>Django</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="card">
+            <div class="project-glow"></div>
+            <h3>🛍️ Trenzyy Ecommerce</h3>
+
+            <p>
+                Modern ecommerce platform with trending products
+                and responsive shopping experience.
+            </p>
+
+            <div class="tech-stack">
+                <span>Django</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Ecommerce</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 <!-- EDUCATION -->
 <section class="education reveal" id="education">
+    <div class="orb orb1"></div>
+<div class="orb orb2"></div>
     <h2>Education 🎓</h2>
 
     <div class="edu-container">
         <div class="edu-card">
+            <div class="timeline-dot"></div>
             <h3>B.Tech (ECE)</h3>
-            <p class="edu-place">Mother Teresa Institute</p>
-            <p class="edu-year">2022–2025</p>
-            <span class="edu-score">81%</span>
+            <p class="edu-place">Mother Teresa Institute of Science and Technology</p>
+            <p class="edu-achievement">
+Built real-world projects during academics.
+</p>
+<p class="edu-year">2022–2025</p>
+            <span class="edu-score">8.16</span>
         </div>
 
         <div class="edu-card">
+            <div class="timeline-dot"></div>
             <h3>Diploma (ECE)</h3>
-            <p class="edu-place">Mother Teresa Institute</p>
+            <p class="edu-place">Mother Teresa Institute of Science and Technology</p>
             <p class="edu-year">2019–2022</p>
-            <span class="edu-score">88%</span>
+            <span class="edu-score">8.87</span>
         </div>
 
         <div class="edu-card">
-            <h3>SSC</h3>
-            <p class="edu-place">ZPSS Kakarlapally</p>
-            <p class="edu-year">2019</p>
-            <span class="edu-score">90%</span>
+            <div class="timeline-dot"></div>
+            <h3>SSC(10th)</h3>
+            <p class="edu-place">ZPSS High School, Kakarlapally</p>
+            <p class="edu-year">-2018-2019</p>
+            <span class="edu-score">9.0</span>
         </div>
     </div>
 </section>
 
 <!-- SKILLS -->
+<!-- SKILLS -->
 <section class="skills reveal" id="skills">
-    <h2>Skills 🔒</h2>
 
-    <div class="skills-container">
-        <div class="skill-card">
-            <h3>Frontend </h3>
-            <div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.Js</span>
-<span>Debugging</span>
-<span>Problem Solving</span></div>
-        </div>
+    <div class="skills-glow"></div>
 
-        <div class="skill-card">
-            <h3>Backend</h3>
-            <div class="skill-tags"><span>Python Full Stack</span><span>Django</span><span>FastAPI</span><span>SQL- MySql</span></div>
-        </div>
+    <div class="section-tag">TECH STACK</div>
 
-        <div class="skill-card">
-            <h3>Tools</h3>
-            <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>GitHub</span><span>VS Code</span>        <span>Jupyter</span>
-</div>
+    <h2 class="section-title">
+        Skills & Technologies 🚀
+    </h2>
+
+    <!-- AUTO MOVING TECH BAR -->
+    <div class="skills-marquee">
+        <div class="marquee-track">
+            <span>Python</span>
+            <span>Django</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>JavaScript</span>
+            <span>UI/UX</span>
+            <span>SQL</span>
+            <span>GitHub</span>
+            <span>Responsive Design</span>
+            <span>Problem Solving</span>
+
+            <!-- duplicate -->
+            <span>Python</span>
+            <span>Django</span>
+            <span>React</span>
+            <span>FastAPI</span>
+            <span>JavaScript</span>
+            <span>UI/UX</span>
+            <span>SQL</span>
+            <span>GitHub</span>
+            <span>Responsive Design</span>
+            <span>Problem Solving</span>
         </div>
     </div>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>Frontend</h3>
+                <span>01</span>
+            </div>
+
+            <div class="skill-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React.Js</span>
+                <span>UI Design</span>
+                <span>Responsive UI/UX</span>
+                <span>Debugging</span>
+                <span>Problem Solving</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>Backend</h3>
+                <span>02</span>
+            </div>
+
+            <div class="skill-tags">
+                <span>Python Full Stack</span>
+                <span>Django</span>
+                <span>FastAPI</span>
+                <span>SQL-MySQL</span>
+                <span>Web Development</span>
+                <span>Database Management</span>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-top">
+                <h3>Tools</h3>
+                <span>03</span>
+            </div>
+
+            <div class="skill-tags">
+                <span>Pandas</span>
+                <span>NumPy</span>
+                <span>GitHub</span>
+                <span>VS Code</span>
+                <span>Jupyter</span>
+            </div>
+        </div>
+
+    </div>
+
 </section>
 
 <!-- CONTACT -->
-<section class="contact reveal" id="contact">
+<!-- <section class="contact reveal" id="contact">
+
     <h2>Contact Me 📩</h2>
 
     <p>
-        LinkedIn:
-        <a href="https://www.linkedin.com/in/yashaswini-kothapalli" target="_blank" style="color:#7c3aed;">
-            View Profile
+        👩‍💻 Name:
+        <span style="color:#c6c1d0;">
+             Yashaswini Kothapalli
+        </span>
+    </p>
+
+    <p>
+        📍 Location:
+        <span style="color:#d9d4e1;">
+            Hyderabad, India
+        </span>
+    </p>
+
+    <p>
+        LinkedIn Profile:
+        <a href="https://www.linkedin.com/in/yashaswini-kothapalli"
+           target="_blank"
+           style="color:#7c3aed; text-decoration:none;">
+            View My Profile here
         </a>
     </p>
 
-    <p>Email: yashaswinikothapalli@gmail.com</p>
-    <p>Phone: +91 6305582860</p>
+    <p>
+        📧 Email:
+        <a href="mailto:yashaswinikothapalli@gmail.com"
+           style="color:#7c3aed; text-decoration:none;">
+            yashaswinikothapalli@gmail.com
+        </a>
+    </p>
+
+    <p>
+        📞 Phone:
+        <span style="color:#b0aaba;">
+            +91 6305582860
+        </span>
+    </p>
+
+</section> -->
+<!-- CONTACT -->
+<section class="contact reveal" id="contact">
+
+    <div class="contact-grid"></div>
+
+    <div class="contact-container">
+
+        <!-- LEFT -->
+        <div class="contact-left">
+
+            <div class="contact-mini">
+                LET'S CONNECT
+            </div>
+
+            <h2 class="contact-title">
+                Let’s Build <br>
+                Something Powerful.
+            </h2>
+
+            <p class="contact-desc">
+                Passionate about building scalable products,
+                premium digital experiences, and impactful
+                real-world solutions through modern development.
+                Always excited to collaborate on innovative ideas.
+            </p>
+
+            <div class="contact-info">
+
+                <!-- CARD -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        👩‍💻
+                    </div>
+
+                    <div class="contact-text">
+                        <h3>Name</h3>
+                        <p>Yashaswini Kothapalli</p>
+                    </div>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div class="contact-text">
+                        <h3>Location</h3>
+                        <p>Hyderabad, India</p>
+                    </div>
+
+                </div>
+
+                <!-- CARD -->
+                <div class="contact-card">
+
+    <div class="contact-icon">
+        📧
+    </div>
+
+    <div class="contact-text">
+        <h3>Email</h3>
+
+        <a href="mailto:yashaswinikothapalli@gmail.com" class="contact-link">
+            yashaswinikothapalli@gmail.com - click here to connect
+        </a>
+    </div>
+
+</div>
+                <!-- CARD -->
+                <div class="contact-card">
+
+    <div class="contact-icon">
+        🔗
+    </div>
+
+    <div class="contact-text">
+        <h3>LinkedIn</h3>
+
+        <a href="https://www.linkedin.com/in/yashaswini-kothapalli/"
+           target="_blank"
+           class="contact-link">
+
+           Connect With Me - click here to connect
+        </a>
+    </div>
+
+</div>
+            </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="contact-right">
+
+            <div class="contact-orbit">
+
+                <div class="float-ball ball1"></div>
+                <div class="float-ball ball2"></div>
+                <div class="float-ball ball3"></div>
+
+                <div class="contact-core">
+                    <h2>
+                      TURNING
+IDEAS
+INTO   <br>
+                       REALITY
+                    </h2>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <footer class="footer">
-    <p>© 2026 Yashaswini Kothapalli • Built with Passion</p>
+    <p>© 2026 Yashaswini Kothapalli • Built with Passion...💜</p>
 </footer>
 
-<script src="script.js"></script>
-</body>
+<script src="{% static 'js/script.js' %}"></script></body>
 </html>
